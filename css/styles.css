@@ -1,19 +1,19 @@
 /* ===================================
-   Heidi Kasama Campaign Website
-   Color Palette from Logo:
-   - Burgundy: #722F37
-   - Gold/Tan: #A68B5B
+   Heidi Kasama Campaign Website - Alt Version
+   Color Palette:
+   - Navy Blue: #243379
+   - Red: #d22030
    - Black: #1A1A1A
    - White: #FFFFFF
    =================================== */
 
 :root {
-    --burgundy: #672140;
-    --burgundy-dark: #521a33;
-    --burgundy-light: #7d2a4d;
-    --gold: #96795f;
-    --gold-light: #b09479;
-    --gold-dark: #7a6249;
+    --burgundy: #243379;
+    --burgundy-dark: #1a2659;
+    --burgundy-light: #2e4099;
+    --gold: #d22030;
+    --gold-light: #e63946;
+    --gold-dark: #b01a28;
     --black: #1A1A1A;
     --white: #FFFFFF;
     --gray-light: #F5F5F5;
@@ -97,12 +97,12 @@ h3 { font-size: clamp(1.25rem, 2vw, 1.5rem); }
 }
 
 .btn-primary {
-    background: var(--burgundy);
+    background: var(--gold);
     color: var(--white);
 }
 
 .btn-primary:hover {
-    background: var(--burgundy-dark);
+    background: var(--gold-dark);
     transform: translateY(-2px);
     box-shadow: var(--shadow-md);
 }
@@ -127,14 +127,14 @@ h3 { font-size: clamp(1.25rem, 2vw, 1.5rem); }
     font-size: 1.125rem;
 }
 
-/* Navigation - BURGUNDY */
+/* Navigation - RED */
 .navbar {
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
     z-index: 1000;
-    background: rgba(103, 33, 64, 0.95);
+    background: rgba(176, 26, 40, 0.95);
     backdrop-filter: blur(10px);
     padding: 15px 0;
     transition: var(--transition);
@@ -179,14 +179,14 @@ h3 { font-size: clamp(1.25rem, 2vw, 1.5rem); }
 }
 
 .nav-link.btn-donate {
-    background: var(--white);
-    color: var(--burgundy);
+    background: var(--burgundy);
+    color: var(--white);
     padding: 10px 24px;
     border-radius: 4px;
 }
 
 .nav-link.btn-donate:hover {
-    background: var(--gold);
+    background: var(--burgundy-dark);
     color: var(--white);
 }
 
@@ -248,7 +248,7 @@ h3 { font-size: clamp(1.25rem, 2vw, 1.5rem); }
 }
 
 .hero-subtitle {
-    color: var(--gold-dark);
+    color: var(--gold);
     font-size: 1.5rem;
     font-weight: 600;
     margin-bottom: 24px;
@@ -305,7 +305,7 @@ h3 { font-size: clamp(1.25rem, 2vw, 1.5rem); }
 }
 
 .hero-stars .star {
-    color: var(--burgundy);
+    color: var(--gold);
     font-size: 1.5rem;
     animation: pulse 2s ease-in-out infinite;
 }
@@ -323,9 +323,9 @@ h3 { font-size: clamp(1.25rem, 2vw, 1.5rem); }
     50% { opacity: 1; transform: scale(1.1); }
 }
 
-/* Callout Section (Election Integrity) - BURGUNDY */
+/* Callout Section (Election Integrity) - RED */
 .callout {
-    background: var(--burgundy);
+    background: var(--gold-dark);
     padding: 80px 20px;
 }
 
@@ -363,7 +363,7 @@ h3 { font-size: clamp(1.25rem, 2vw, 1.5rem); }
 }
 
 .callout-list .check {
-    color: var(--gold);
+    color: var(--burgundy);
     font-weight: bold;
     font-size: 1.25rem;
 }
@@ -454,7 +454,7 @@ h3 { font-size: clamp(1.25rem, 2vw, 1.5rem); }
     border-radius: 8px;
     box-shadow: var(--shadow-sm);
     transition: var(--transition);
-    border-top: 4px solid var(--burgundy);
+    border-top: 4px solid var(--gold);
 }
 
 .issue-card:hover {
@@ -469,7 +469,7 @@ h3 { font-size: clamp(1.25rem, 2vw, 1.5rem); }
 .issue-icon svg {
     width: 48px;
     height: 48px;
-    fill: var(--burgundy);
+    fill: var(--gold);
 }
 
 .issue-card h3 {
@@ -484,10 +484,10 @@ h3 { font-size: clamp(1.25rem, 2vw, 1.5rem); }
     line-height: 1.7;
 }
 
-/* Record Section - DARK GRAY */
+/* Record Section - NAVY BLUE */
 .record {
     padding: 100px 20px;
-    background: var(--black);
+    background: var(--burgundy);
 }
 
 .record-grid {
@@ -519,7 +519,7 @@ h3 { font-size: clamp(1.25rem, 2vw, 1.5rem); }
 }
 
 .record-highlights {
-    background: rgba(255,255,255,0.05);
+    background: rgba(255,255,255,0.1);
     padding: 40px;
     border-radius: 8px;
     border-left: 4px solid var(--gold);
@@ -569,6 +569,7 @@ h3 { font-size: clamp(1.25rem, 2vw, 1.5rem); }
     display: flex;
     align-items: center;
     gap: 24px;
+    box-shadow: var(--shadow-lg);
 }
 
 .endorsement-headshot {
@@ -678,13 +679,20 @@ h3 { font-size: clamp(1.25rem, 2vw, 1.5rem); }
     font-size: 1.125rem;
     font-style: normal;
     font-weight: 600;
-    color: var(--gold-dark);
+    color: var(--gold);
 }
 
-/* About Section - DARK GRAY */
+/* About Section - NAVY BLUE */
 .about {
     padding: 100px 20px;
-    background: var(--black);
+    background: var(--burgundy);
+}
+
+.about-lead {
+    font-size: 1.25rem;
+    color: var(--gold);
+    font-weight: 600;
+    margin-bottom: 24px;
 }
 
 .about-content {
@@ -712,13 +720,6 @@ h3 { font-size: clamp(1.25rem, 2vw, 1.5rem); }
     margin-bottom: 20px;
 }
 
-.about-lead {
-    font-size: 1.25rem;
-    color: var(--gold);
-    font-weight: 600;
-    margin-bottom: 24px;
-}
-
 .about-text p {
     color: rgba(255,255,255,0.9);
     margin-bottom: 16px;
@@ -730,12 +731,12 @@ h3 { font-size: clamp(1.25rem, 2vw, 1.5rem); }
 }
 
 .about-cta .btn-primary {
-    background: var(--white);
-    color: var(--burgundy);
+    background: var(--gold);
+    color: var(--white);
 }
 
 .about-cta .btn-primary:hover {
-    background: var(--gold);
+    background: var(--gold-dark);
     color: var(--white);
 }
 
@@ -799,9 +800,9 @@ h3 { font-size: clamp(1.25rem, 2vw, 1.5rem); }
     margin-top: 24px;
 }
 
-/* Footer - BURGUNDY */
+/* Footer - RED */
 .footer {
-    background: var(--burgundy);
+    background: var(--gold-dark);
     padding: 60px 20px 30px;
 }
 
@@ -854,7 +855,7 @@ h3 { font-size: clamp(1.25rem, 2vw, 1.5rem); }
 }
 
 .footer-social a:hover {
-    background: var(--burgundy);
+    background: var(--gold);
 }
 
 .footer-social svg {
@@ -1083,4 +1084,3 @@ h3 { font-size: clamp(1.25rem, 2vw, 1.5rem); }
         margin-bottom: 10px;
     }
 }
-
