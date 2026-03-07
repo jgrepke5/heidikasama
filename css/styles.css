@@ -297,7 +297,7 @@ h3 { font-size: clamp(1.25rem, 2vw, 1.5rem); }
 
 .hero-stars {
     position: absolute;
-    bottom: 40px;
+    bottom: 20px;
     left: 50%;
     transform: translateX(-50%);
     display: flex;
@@ -1041,7 +1041,11 @@ h3 { font-size: clamp(1.25rem, 2vw, 1.5rem); }
 
 @media (max-width: 480px) {
     .hero {
-        padding: 100px 20px 60px;
+        padding: 100px 20px 80px;
+    }
+    
+    .hero-stars {
+        bottom: 15px;
     }
     
     .hero-cta {
@@ -1068,4 +1072,15 @@ h3 { font-size: clamp(1.25rem, 2vw, 1.5rem); }
     .amount-btn {
         width: 100%;
     }
+    
+    .endorsement-card.featured {
+        flex-direction: column;
+        text-align: center;
+        padding: 30px 20px;
+    }
+    
+    .endorsement-headshot {
+        margin-bottom: 10px;
+    }
 }
+
